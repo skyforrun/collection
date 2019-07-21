@@ -138,7 +138,7 @@ public class ZjLinkedList {
         linkedList.add(22);
 
         //linkedList.remove(1);
-        linkedList.add(2,"哈哈哈");
+        linkedList.add(3,"哈哈哈");
         for (int i=0;i<linkedList.size();i++) {
             System.out.println(linkedList.get(i));
         }
