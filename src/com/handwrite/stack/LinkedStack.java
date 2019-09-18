@@ -82,17 +82,17 @@ public class LinkedStack implements Stack{
     }
 
     public static void main(String[] args) {
-        Stack stack = new LinkedStack();
+        Stack linkedStack= new LinkedStack();
         for (int i = 0;i<5;i++){
-            stack.push(i+1);
+            linkedStack.push(i+1);
         }
-        System.out.println(stack.pop());
-        System.out.println(stack.pop());
-        System.out.println(stack.pop());
+        System.out.println(linkedStack.pop());
+        System.out.println(linkedStack.pop());
+        System.out.println(linkedStack.pop());
 
-        int size = stack.size();
+        int size = linkedStack.size();
         for (int i = 0;i<size;i++){
-            System.out.println("弹出之后，栈里面的元素为："+stack.pop());
+            System.out.println("弹出之后，栈里面的元素为："+linkedStack.pop());
         }
     }
 }

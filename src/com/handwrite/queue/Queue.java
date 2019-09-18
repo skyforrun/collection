@@ -3,7 +3,7 @@ package com.handwrite.queue;
 /**
  * 队列相关操作
  */
-public interface queue {
+public interface Queue {
 
     //大小
     public int size();
