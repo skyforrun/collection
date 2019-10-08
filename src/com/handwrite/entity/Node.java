@@ -1,4 +1,4 @@
-package com.handwrite;
+package com.handwrite.entity;
 
 /**
  * @ProjectName: collection
@@ -10,9 +10,9 @@ package com.handwrite;
  * @Version: 1.0
  */
 public class Node {
-     Node previous;
-     Object object;
-     Node next;
+     public Node previous;
+     public Object object;
+     public Node next;
 
     public Node() {
     }

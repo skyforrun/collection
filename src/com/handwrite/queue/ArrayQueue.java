@@ -31,6 +31,7 @@ public class ArrayQueue implements Queue {
 
     @Override
     public void inqueue(Object object) {
+        System.out.println(data.length);
         if (data.length==size){
             grow(data.length*2);
         }

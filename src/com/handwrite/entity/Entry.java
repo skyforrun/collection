@@ -1,4 +1,4 @@
-package com.handwrite;
+package com.handwrite.entity;
 
 /**
  * @ProjectName: collection
@@ -9,9 +9,9 @@ package com.handwrite;
  * @Date: 2019/7/21 18:03
  * @Version: 1.0
  */
-class Entry{
-    Object key;
-    Object value;
+public class Entry{
+    public Object key;
+    public Object value;
 
     public Entry(Object key, Object value) {
         this.key = key;

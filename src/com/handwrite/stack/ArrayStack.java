@@ -8,7 +8,7 @@ public class ArrayStack implements Stack{
     /**
      * 默认数组大小
      */
-    private final int DEFAULT_CAPACITY = 10;
+    private final static int DEFAULT_CAPACITY = 10;
 
     /**
      * 数组
@@ -32,7 +32,7 @@ public class ArrayStack implements Stack{
     }
 
     public ArrayStack(){
-        this(10);
+        this(DEFAULT_CAPACITY);
     }
 
     @Override
@@ -47,12 +47,12 @@ public class ArrayStack implements Stack{
 
     @Override
     public void push(Object object) {
-        if (data.length == size){
-            grow(size*2);
+        if (size == data.length){
+            grow(data.length*2);
         }
 
-        data[++top] = object;
         size++;
+        data[++top] = object;
     }
 
     /**
@@ -61,7 +61,7 @@ public class ArrayStack implements Stack{
      */
     private void grow(int capacity) {
         //小于默认大小不用缩容
-        if (capacity<=capacity){
+        if (capacity<=DEFAULT_CAPACITY){
             return;
         }
         data = Arrays.copyOf(data,capacity);
@@ -73,7 +73,7 @@ public class ArrayStack implements Stack{
             throw new EmptyStackException();
         }
         if (size<data.length/2){
-
+            grow(data.length/2);
         }
         size--;
         return data[top--];

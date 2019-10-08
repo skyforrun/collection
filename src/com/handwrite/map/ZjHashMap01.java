@@ -1,4 +1,7 @@
-package com.handwrite;
+package com.handwrite.map;
+
+import com.handwrite.entity.Dog;
+import com.handwrite.entity.Entry;
 
 /**
  * @ProjectName: collection

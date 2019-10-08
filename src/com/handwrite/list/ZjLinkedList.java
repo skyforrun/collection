@@ -1,4 +1,6 @@
-package com.handwrite;
+package com.handwrite.list;
+
+import com.handwrite.entity.Node;
 
 /**
  * @ProjectName: collection

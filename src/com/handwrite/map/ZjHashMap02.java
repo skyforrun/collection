@@ -1,4 +1,6 @@
-package com.handwrite;
+package com.handwrite.map;
+
+import com.handwrite.entity.Entry;
 
 import java.util.LinkedList;
 
@@ -12,7 +14,7 @@ import java.util.LinkedList;
  * @Version: 1.0
  */
 public class ZjHashMap02 {
-     LinkedList[] arr = new LinkedList[999];
+    LinkedList[] arr = new LinkedList[999];
     int size;
 
     /**
